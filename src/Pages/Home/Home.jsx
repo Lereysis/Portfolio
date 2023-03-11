@@ -14,7 +14,6 @@ import { BsSuitHeartFill } from "react-icons/bs";
 import { AiFillPhone } from "react-icons/ai";
 import { GrMail } from "react-icons/gr";
 
-
 const Home = () => {
     return (
         <>
@@ -22,7 +21,7 @@ const Home = () => {
                 <div className={style.firstSection} >
                     <div className={style.desktop}>
                         <div>Medicenlere</div>
-                        <div>
+                        <div className={style.desktopMenu}>
                             <a href="#">About me</a>
                             <a href="#">What I do</a>
                             <a href="#">Let's Talk</a>
@@ -33,9 +32,9 @@ const Home = () => {
                             <p>¡Hi! My name is Lereysis, But you can call me Lere</p>
                             <h2>I'm Full Stack Developer, I really enjoy design and make it real</h2>
                             <p>I'm looking for my firts IT Job </p>
-                            <a href="https://github.com/Lereysis" target='_blank'><AiFillGithub /></a>
-                            <a href="https://www.linkedin.com/in/lereysis-quezada-814a2a21a/" target='_blank'><AiFillLinkedin /></a>
-                            <a href="https://www.instagram.com/lereysisq/" target='_blank'><AiFillInstagram /></a>
+                            <a className={style.icon} chref="https://github.com/Lereysis" target='_blank'><AiFillGithub /></a>
+                            <a className={style.icon} href="https://www.linkedin.com/in/lereysis-quezada-814a2a21a/" target='_blank'><AiFillLinkedin /></a>
+                            <a className={style.icon} href="https://www.instagram.com/lereysisq/" target='_blank'><AiFillInstagram /></a>
                             <div className={style.firstSectionButtons}>
                                 <div>
                                     <button className={style.buttonsPorfolio}>Portfolio</button>
@@ -50,9 +49,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                  {/* <!-- CARD --> */}
+                {/* <!-- CARD --> */}
 
-                  <div className={style.cards}>
+                <div className={style.cards}>
                     <div className={style.card}>
                         <div className={style.header}>
                             <div className={style.date}><h4>About me</h4></div>
@@ -89,7 +88,7 @@ const Home = () => {
                         <div className={style.footer}>
                             <div className={style.autor}>
                                 <a href="#">
-                                    <img src={imglere} alt="logo-lere"  />
+                                    <img src={imglere} alt="logo-lere" />
                                     <span>Lereysis Quezada</span>
                                 </a>
                             </div>
@@ -112,7 +111,7 @@ const Home = () => {
                         <div className={style.footer}>
                             <div className={style.autor}>
                                 <a href="#">
-                                    <img src={imglere} alt="logo-lere"  />
+                                    <img src={imglere} alt="logo-lere" />
                                     <span>Lereysis Quezada</span>
                                 </a>
                             </div>
@@ -132,7 +131,7 @@ const Home = () => {
                         <div className={style.footer}>
                             <div className={style.autor}>
                                 <a href="#">
-                                    <img src={imglere} alt="logo-lere"  />
+                                    <img src={imglere} alt="logo-lere" />
                                     <span>Lereysis Quezada</span>
                                 </a>
                             </div>
@@ -163,8 +162,8 @@ const Home = () => {
                             <p> Development of a project in Javascript, React, Redux, Node, Sequelize, and Postman to search for information about countries and create customized tourist activities, with filtering, sorting, and search options by country </p>
                             <button className={style.buttonsPorfolio}>See more</button>
                         </div>
-                        <div style={{ textAlign: 'center' }}>
-                            <img style={{ maxHeight: '200px' }} src={imgCountry} alt="portada-proyecto-pokemon" />
+                        <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
+                            <img src={imgCountry} alt="portada-proyecto-pokemon" />
                             <p>Personal project</p>
                         </div>
                     </div>
@@ -172,20 +171,20 @@ const Home = () => {
                         <div>
                             <h1>Huellitas de amor</h1>
                             <p>Allow me to present ❤️ "Huellitas de Amor" ❤️ a website created to facilitate the pet adoption process for individuals, foundations, NGOs, and foster homes.
-                            <br />
-                            Our challenge was to develop: <br />
-                            💸 Payment Gateway <br />
-                            💬 Translation into three languages: English, Spanish, and Portuguese  <br />
-                            📱 Responsive Design <br />
-                            💌 Email Notifications <br />
-                            🗑 Logical Deletion <br />
-                            🗄 Data Persistence (LocalStorage and SessionStorage) <br />
-                            🏠 Local and Third-Party Login (Github and Google) <br />
-                            📊 User Dashboard with Admin role..</p>
+                                <br />
+                                Our challenge was to develop: <br />
+                                💸 Payment Gateway <br />
+                                💬 Translation into three languages: English, Spanish, and Portuguese  <br />
+                                📱 Responsive Design <br />
+                                💌 Email Notifications <br />
+                                🗑 Logical Deletion <br />
+                                🗄 Data Persistence (LocalStorage and SessionStorage) <br />
+                                🏠 Local and Third-Party Login (Github and Google) <br />
+                                📊 User Dashboard with Admin role..</p>
                             <button className={style.buttonsPorfolio}>See more</button>
                         </div>
-                        <div style={{ textAlign: 'center' }}>
-                            <img style={{ maxHeight: '200px' }} src={imgHuellitas} alt="portada-proyecto-pokemon" />
+                        <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
+                            <img  src={imgHuellitas} alt="portada-proyecto-pokemon" />
                             <p>Pokemon Api</p>
                         </div>
                     </div>
@@ -195,8 +194,8 @@ const Home = () => {
                             <p>The system is designed to handle event invitations and manage guests, utilizing technologies such as React, Javascript, Redux Toolkit, Bootstrap, and others.</p>
                             <button className={style.buttonsPorfolio}>See more</button>
                         </div>
-                        <div style={{ textAlign: 'center' }}>
-                            <img style={{ maxHeight: '200px' }} src={imgWedding} alt="portada-proyecto-pokemon" />
+                        <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
+                            <img  src={imgWedding} alt="portada-proyecto-pokemon" />
                             <p>Pokemon Api</p>
                         </div>
                     </div>
@@ -204,39 +203,39 @@ const Home = () => {
                 <div className={style.thirdSectionInformation}>
                     <div className={style.moreInformationContainer}>
                         <h4>Academic experience</h4>
-                            <h4>Full Stack Developer-Henry Pokemons Single Project:</h4>
-                            <ul>
-                                <li>The Front-end of the application was made with technologies such as React, Redux.</li>
-                                <li>The back-end implements NodeJS, Express, MySQL, and Sequelize.</li>
-                                <li>Creation of reusable components.</li>
-                                <li>From the store to manage application states.</li>
-                            </ul>
-                            <h4>Little Footprints of Love Group Project:</h4>
-                            <ul>
-                                <li>Technologies such as React, Redux Toolkit, MUI js, JavaScript, Fomik and more are used in the Front-end of the application.</li>
-                                <li>The back-end implements NodeJS, Express, MySQL, and Sequelize.</li>
-                                <li>Creation of reusable components.</li>
-                                <li>from the store to manage application states.</li>
-                            </ul>
+                        <h4>Full Stack Developer-Henry Pokemons Single Project:</h4>
+                        <ul>
+                            <li>The Front-end of the application was made with technologies such as React, Redux.</li>
+                            <li>The back-end implements NodeJS, Express, MySQL, and Sequelize.</li>
+                            <li>Creation of reusable components.</li>
+                            <li>From the store to manage application states.</li>
+                        </ul>
+                        <h4>Little Footprints of Love Group Project:</h4>
+                        <ul>
+                            <li>Technologies such as React, Redux Toolkit, MUI js, JavaScript, Fomik and more are used in the Front-end of the application.</li>
+                            <li>The back-end implements NodeJS, Express, MySQL, and Sequelize.</li>
+                            <li>Creation of reusable components.</li>
+                            <li>from the store to manage application states.</li>
+                        </ul>
                     </div>
                     <div className={style.moreInformationContainer}>
                         <h4>Work experience</h4>
                         <h4>Design - Community manager</h4>
-                            <ul>
-                                <li>Development of content plans under organic strategy.</li>
-                                <li>Social media account management.</li>
-                                <li>Elaboration of pieces of designs according to the brand branding.</li>
-                                <li> Sectors of experience: Real Estate Sector, Event Planner,
-Gift shop, Restaurants.</li>
-                            </ul>
-                            <h4>Wordpress developer</h4>
-                            <ul>
-                                <li>Development of web page for advertising agency.</li>
-                                <li>Development of a web page for an academy of Argentine tango.</li>
-                                <li>Development of a website for the company BIMDAO</li>
-                                <li>Elaboration of E-Commerce for gift shop.</li>
-                                <li>Elaboration of Landing Page of sales.</li>
-                            </ul>
+                        <ul>
+                            <li>Development of content plans under organic strategy.</li>
+                            <li>Social media account management.</li>
+                            <li>Elaboration of pieces of designs according to the brand branding.</li>
+                            <li> Sectors of experience: Real Estate Sector, Event Planner,
+                                Gift shop, Restaurants.</li>
+                        </ul>
+                        <h4>Wordpress developer</h4>
+                        <ul>
+                            <li>Development of web page for advertising agency.</li>
+                            <li>Development of a web page for an academy of Argentine tango.</li>
+                            <li>Development of a website for the company BIMDAO</li>
+                            <li>Elaboration of E-Commerce for gift shop.</li>
+                            <li>Elaboration of Landing Page of sales.</li>
+                        </ul>
                     </div>
                     <div className={style.moreInformationContainer} style={{ lineHeight: '10px' }}>
                         <h4>Education</h4>
@@ -255,27 +254,27 @@ Gift shop, Restaurants.</li>
                         <h4>Platzi</h4>
                         <p>Html and CSS basics.</p>
                     </div>
-                </div>               
+                </div>
                 <div className={style.lastSection}>
                     <div>
                         <h1>Let's Talk</h1>
-                        <div style={{ display: 'flex', gap: '40px' }}>
-                            <div className={style.contact}>    
-                                <h3><AiFillPhone/> Phone </h3>
+                        <div className={style.lastSectionContact}>
+                            <div className={style.contact}>
+                                <h3><AiFillPhone /> Phone </h3>
                                 <p> +57 311 607 45 74</p>
                             </div>
-                            <div  className={style.contact}>
-                                <h3> <GrMail/> Email</h3>
+                            <div className={style.contact}>
+                                <h3> <GrMail /> Email</h3>
                                 <p>designlere@gmail.com</p>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', gap: ' 0 40px' }}>
-                            <div  className={style.contact}>
-                                <h3> <AiFillLinkedin/>  Linkedin</h3>
+                        <div className={style.lastSectionContact}>
+                            <div className={style.contact}>
+                                <h3> <AiFillLinkedin />  Linkedin</h3>
                                 <p>/Lereysis</p>
                             </div>
-                            <div  className={style.contact}>
-                                <h3><AiFillGithub/> Github</h3>
+                            <div className={style.contact}>
+                                <h3><AiFillGithub /> Github</h3>
                                 <p>/Lereysis</p>
                             </div>
                         </div>
@@ -286,11 +285,11 @@ Gift shop, Restaurants.</li>
                         </div>
                     </div>
                 </div>
-                <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <p>
                         Made by lere
                     </p>
-                    <BsSuitHeartFill style={{color:'var(--primary-color)'}}/>
+                    <BsSuitHeartFill style={{ color: 'var(--primary-color)' }} />
                 </div>
 
 

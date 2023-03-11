@@ -250,3 +250,184 @@ color: lightyellow;
 .element-2:hover {
   margin-left: -130px;
 }
+
+.portfolioContainer .portfolioImg img {
+  max-height: 200px
+}
+
+.lastSectionContact{
+  display: flex;
+  gap: 40px;
+}
+
+
+@media screen and (min-width: 535px) and (max-width: 900px) {
+  .container {
+    padding: 20px;
+  }
+  .firstSectionInformation{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .imgAbout {
+    margin: 0;
+  }
+
+  .firstSectionInformation .about {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .card[class*="element"] {
+    margin-left: 0px;
+  }
+
+  .portfolioContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px 50px;
+  }
+
+  .portfolioContainer .portfolioImg img{
+    max-height: 180px;
+  }
+  
+  .thirdSectionInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thirdSectionInformation .moreInformationContainer {
+    width: 90%;
+  }
+
+  .secondSectionInformation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lastSection{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
+
+@media screen and (min-width:0px) and (max-width: 535px) {
+  .container {
+    padding: 20px ;
+  }
+
+  .container a{
+    font-size: .8rem;
+  }
+
+  .container .icon{
+    font-size: 29px;
+  }
+
+  .container h2{
+    font-size: 1rem;
+  }
+ 
+  .firstSectionInformation{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
+
+  .firstSection{
+    margin: 0px 0px;
+  }
+
+  .imgAbout {
+    margin: 0;
+  }
+
+  .firstSectionInformation .about {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktopMenu{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgAbout img{
+    height:200px ;
+  }
+  
+  .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .card[class*="element"] {
+    margin-left: 0px;
+  }
+
+  .secondSectionInformation{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .portfolioContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px 25px;
+  }
+
+  .portfolioContainer .portfolioImg img{
+    max-height: 120px;
+  }
+
+  .thirdSectionInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thirdSectionInformation .moreInformationContainer {
+    width: 90%;
+  }
+
+  .lastSection{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .lastSectionContact{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+}

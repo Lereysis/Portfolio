@@ -22,9 +22,9 @@ const Home = () => {
                     <div className={style.desktop}>
                         <div>Medicenlere</div>
                         <div className={style.desktopMenu}>
-                            <a href="#">About me</a>
-                            <a href="#">What I do</a>
-                            <a href="#">Let's Talk</a>
+                            <a href="#about">About me</a>
+                            <a href="#whatIDo">What I do</a>
+                            <a href="#LestsTalk">Let's Talk</a>
                         </div>
                     </div>
                     <div className={style.firstSectionInformation}>
@@ -37,10 +37,10 @@ const Home = () => {
                             <a className={style.icon} href="https://www.instagram.com/lereysisq/" target='_blank'><AiFillInstagram /></a>
                             <div className={style.firstSectionButtons}>
                                 <div>
-                                    <button className={style.buttonsPorfolio}>Portfolio</button>
+                                    <a href="#portfolio" className={style.buttonsPorfolio}>Portfolio</a>
                                 </div>
                                 <div>
-                                    <button className={style.buttonsPorfolioActive}>¡Let's Talk!</button>
+                                    <a href="#LestsTalk" className={style.buttonsPorfolioActive}>  ¡Let's Talk!</a>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ const Home = () => {
                 </div>
                 {/* <!-- CARD --> */}
 
-                <div className={style.cards}>
+                <div id="about" className={style.cards}>
                     <div className={style.card}>
                         <div className={style.header}>
                             <div className={style.date}><h4>About me</h4></div>
@@ -102,7 +102,6 @@ const Home = () => {
                                 <ul>
                                     <li>Group leader</li>
                                     <li>Adaptability</li>
-                                    <li>Adaptability</li>
                                     <li>Leaning towards the customer</li>
                                 </ul>
                             </div>
@@ -138,7 +137,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <h1 className={style.titles}>What I Do</h1>
+                <h1 id="whatIDo" className={style.titles}>What I Do</h1>
                 <div className={style.secondSectionInformation} >
                     <div className={style.whatIDo}>
                         <a style={{ fontSize: '100px', color: '#f6ce90' }}><RiPagesLine /></a>
@@ -154,13 +153,13 @@ const Home = () => {
                         <p>Do you need a responsive funtionality website <br /> <b>Let me know</b> </p>
                     </div>
                 </div>
-                <h1 className={style.titles}>Porfolio</h1>
+                <h1 id="portfolio" className={style.titles}>Porfolio</h1>
                 <div>
                     <div className={style.portfolioContainer}>
                         <div>
                             <h1>Country Api</h1>
                             <p> Development of a project in Javascript, React, Redux, Node, Sequelize, and Postman to search for information about countries and create customized tourist activities, with filtering, sorting, and search options by country </p>
-                            <button className={style.buttonsPorfolio}>See more</button>
+                            <a href='https://github.com/Lereysis/PI-Country' target='_blank' className={style.buttonsPorfolio}>See more</a>
                         </div>
                         <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
                             <img src={imgCountry} alt="portada-proyecto-pokemon" />
@@ -181,7 +180,7 @@ const Home = () => {
                                 🗄 Data Persistence (LocalStorage and SessionStorage) <br />
                                 🏠 Local and Third-Party Login (Github and Google) <br />
                                 📊 User Dashboard with Admin role..</p>
-                            <button className={style.buttonsPorfolio}>See more</button>
+                            <a href='https://huellitas-de-amor.vercel.app/' target="_blank" className={style.buttonsPorfolio}>See more</a>
                         </div>
                         <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
                             <img  src={imgHuellitas} alt="portada-proyecto-pokemon" />
@@ -192,7 +191,7 @@ const Home = () => {
                         <div>
                             <h1>App Invitation</h1>
                             <p>The system is designed to handle event invitations and manage guests, utilizing technologies such as React, Javascript, Redux Toolkit, Bootstrap, and others.</p>
-                            <button className={style.buttonsPorfolio}>See more</button>
+                            <a href='https://wedding-invitation-umber.vercel.app/' className={style.buttonsPorfolio} target='_blank'>See more</a>
                         </div>
                         <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
                             <img  src={imgWedding} alt="portada-proyecto-pokemon" />
@@ -237,26 +236,38 @@ const Home = () => {
                             <li>Elaboration of Landing Page of sales.</li>
                         </ul>
                     </div>
-                    <div className={style.moreInformationContainer} style={{ lineHeight: '10px' }}>
+                    <div className={style.moreInformationContainer}>
                         <h4>Education</h4>
                         <h4>Jose Antonio Paez University</h4>
-                        <p>4th semester of marketing 2016-2018</p>
+                            <ul>
+                                <li>4th semester of marketing 2016-2018</li>
+                            </ul>
                         <h4>U.E Industrial Technology High School</h4>
-                        <p>Bachelor's degree 2012-2016</p>
+                            <ul>
+                                <li>Bachelor's degree 2012-2016</li>
+                            </ul>
                         <h4>Colombo american student</h4>
-                        <p>Last level of English course 8 level B1</p>
+                            <ul>
+                                <li>Last level of English course 8 level B1</li>
+                            </ul>
                         <h4>Full Stack Developer Bootcamp - Henry - 2022</h4>
-                        <p>800 hours intensive mode, HTML, CSS, JavaScript,
-                            React, Redux, NodeJS, ExpressJS, PostgreSQL and Best practices.
-                        </p>
+                            <ul>
+                                <li>800 hours intensive mode, HTML, CSS, JavaScript,
+                                React, Redux, NodeJS, ExpressJS, PostgreSQL and Best practices.</li>
+                            </ul>
                         <h4>Bamboo Digital School</h4>
-                        <p>Certified as Community manager.</p>
+                            <ul>
+                                <li>Certified as Community manager.</li>
+                            </ul>
                         <h4>Platzi</h4>
-                        <p>Html and CSS basics.</p>
+                            <ul>
+                                <li>Html and CSS basics.</li>
+                            </ul>
+
                     </div>
                 </div>
                 <div className={style.lastSection}>
-                    <div>
+                    <div id="LestsTalk">
                         <h1>Let's Talk</h1>
                         <div className={style.lastSectionContact}>
                             <div className={style.contact}>

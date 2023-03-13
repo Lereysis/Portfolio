@@ -171,7 +171,7 @@ const Home = () => {
                         </div>
                         <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
                             <img src={imgCountry} alt="portada-proyecto-pokemon" />
-                            <p>Personal project</p>
+                            <p>Personal Project</p>
                         </div>
                     </div>
                     <div className={style.portfolioContainer}>
@@ -192,7 +192,7 @@ const Home = () => {
                         </div>
                         <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
                             <img src={imgHuellitas} alt="portada-proyecto-pokemon" />
-                            <p>Pokemon Api</p>
+                            <p>Group Project</p>
                         </div>
                     </div>
                     <div className={style.portfolioContainer}>
@@ -203,7 +203,7 @@ const Home = () => {
                         </div>
                         <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
                             <img src={imgWedding} alt="portada-proyecto-pokemon" />
-                            <p>Pokemon Api</p>
+                            <p>Group Poject</p>
                         </div>
                     </div>
                 </div>

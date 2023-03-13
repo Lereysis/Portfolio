@@ -12,6 +12,7 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { CgWebsite } from "react-icons/cg";
 import { BsSuitHeartFill } from "react-icons/bs";
 import { AiFillPhone } from "react-icons/ai";
+import { AiFillBehanceSquare } from "react-icons/ai";
 import { GrMail } from "react-icons/gr";
 
 const Home = () => {
@@ -31,10 +32,17 @@ const Home = () => {
                         <div className={style.about}>
                             <p>¡Hi! My name is Lereysis, But you can call me Lere</p>
                             <h2>I'm Full Stack Developer, I really enjoy design and make it real</h2>
-                            <p>I'm looking for my firts IT Job </p>
+                            <p>Frontend developer with experience in developing web applications. I
+                                have worked on projects using technologies such as JavaScript, React,
+                                Redux, Bootstrap, Mui, NodeJs; I have knowledge in Git version control,
+                                Scrum agile development, I am currently studying English and improving
+                                my skills with styles. I describe myself as passionate about the latest
+                                trends in technology and I like working as a team to create innovative
+                                and scalable solutions. </p>
                             <a className={style.icon} chref="https://github.com/Lereysis" target='_blank'><AiFillGithub /></a>
                             <a className={style.icon} href="https://www.linkedin.com/in/lereysis-quezada-814a2a21a/" target='_blank'><AiFillLinkedin /></a>
                             <a className={style.icon} href="https://www.instagram.com/lereysisq/" target='_blank'><AiFillInstagram /></a>
+                            <a className={style.icon} href="https://www.behance.net/lereysisquezada2022" target='_blank'><AiFillBehanceSquare /></a>
                             <div className={style.firstSectionButtons}>
                                 <div>
                                     <a href="#portfolio" className={style.buttonsPorfolio}>Portfolio</a>
@@ -183,7 +191,7 @@ const Home = () => {
                             <a href='https://huellitas-de-amor.vercel.app/' target="_blank" className={style.buttonsPorfolio}>See more</a>
                         </div>
                         <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
-                            <img  src={imgHuellitas} alt="portada-proyecto-pokemon" />
+                            <img src={imgHuellitas} alt="portada-proyecto-pokemon" />
                             <p>Pokemon Api</p>
                         </div>
                     </div>
@@ -194,7 +202,7 @@ const Home = () => {
                             <a href='https://wedding-invitation-umber.vercel.app/' className={style.buttonsPorfolio} target='_blank'>See more</a>
                         </div>
                         <div className={style.portfolioImg} style={{ textAlign: 'center' }}>
-                            <img  src={imgWedding} alt="portada-proyecto-pokemon" />
+                            <img src={imgWedding} alt="portada-proyecto-pokemon" />
                             <p>Pokemon Api</p>
                         </div>
                     </div>
@@ -239,30 +247,30 @@ const Home = () => {
                     <div className={style.moreInformationContainer}>
                         <h4>Education</h4>
                         <h4>Jose Antonio Paez University</h4>
-                            <ul>
-                                <li>4th semester of marketing 2016-2018</li>
-                            </ul>
+                        <ul>
+                            <li>4th semester of marketing 2016-2018</li>
+                        </ul>
                         <h4>U.E Industrial Technology High School</h4>
-                            <ul>
-                                <li>Bachelor's degree 2012-2016</li>
-                            </ul>
+                        <ul>
+                            <li>Bachelor's degree 2012-2016</li>
+                        </ul>
                         <h4>Colombo american student</h4>
-                            <ul>
-                                <li>Last level of English course 8 level B1</li>
-                            </ul>
+                        <ul>
+                            <li>Last level of English course 8 level B1</li>
+                        </ul>
                         <h4>Full Stack Developer Bootcamp - Henry - 2022</h4>
-                            <ul>
-                                <li>800 hours intensive mode, HTML, CSS, JavaScript,
+                        <ul>
+                            <li>800 hours intensive mode, HTML, CSS, JavaScript,
                                 React, Redux, NodeJS, ExpressJS, PostgreSQL and Best practices.</li>
-                            </ul>
+                        </ul>
                         <h4>Bamboo Digital School</h4>
-                            <ul>
-                                <li>Certified as Community manager.</li>
-                            </ul>
+                        <ul>
+                            <li>Certified as Community manager.</li>
+                        </ul>
                         <h4>Platzi</h4>
-                            <ul>
-                                <li>Html and CSS basics.</li>
-                            </ul>
+                        <ul>
+                            <li>Html and CSS basics.</li>
+                        </ul>
 
                     </div>
                 </div>

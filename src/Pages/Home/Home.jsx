@@ -39,7 +39,7 @@ const Home = () => {
                                 my skills with styles. I describe myself as passionate about the latest
                                 trends in technology and I like working as a team to create innovative
                                 and scalable solutions. </p>
-                            <a className={style.icon} chref="https://github.com/Lereysis" target='_blank'><AiFillGithub /></a>
+                            <a className={style.icon} href="https://github.com/Lereysis" target='_blank'><AiFillGithub /></a>
                             <a className={style.icon} href="https://www.linkedin.com/in/lereysis-quezada-814a2a21a/" target='_blank'><AiFillLinkedin /></a>
                             <a className={style.icon} href="https://www.instagram.com/lereysisq/" target='_blank'><AiFillInstagram /></a>
                             <a className={style.icon} href="https://www.behance.net/lereysisquezada2022" target='_blank'><AiFillBehanceSquare /></a>
